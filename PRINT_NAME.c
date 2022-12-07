@@ -1,8 +1,6 @@
 #include<stdio.h>
-#include<conio.h>
 
-int
-main ()
+int main ()
 {
 
   printf ("Name : Krunal Parekh\n");
