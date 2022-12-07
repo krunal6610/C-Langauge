@@ -1,2 +1,2 @@
 # C-Langauge-
-C - Langauge All Programs
+C - Langauge Programs
