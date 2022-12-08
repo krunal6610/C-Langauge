@@ -1,2 +1,1 @@
-# C-Langauge-
-C - Langauge Programs
+# C-Langauge
