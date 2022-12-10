@@ -95,7 +95,7 @@ void restart ()
 
   int choice_2;
 
-  printf ("Do you continue Type [1] for yes or [0] for no: ");
+  printf ("Do you want to continue Type [1] for yes or [0] for no: ");
   scanf ("%d", &choice_2);
 
 
