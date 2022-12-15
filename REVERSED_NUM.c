@@ -3,6 +3,7 @@
 program to print the number in reverse order.
 
 */
+
 #include <stdio.h>
 
 int main ()
