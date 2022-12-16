@@ -1,0 +1,128 @@
+/*
+
+ 2D Matrix Multiplication
+
+*/
+
+#include <stdio.h>
+
+int main ()
+{
+  int sum[2][2];
+  int a[2][2], b[2][2], c[2][2], i, j, k;
+  printf ("----------Matrix 1----------\n\n");
+
+  for (i = 0; i < 2; i++)
+    {
+
+
+      for (j = 0; j < 2; j++)
+	{
+
+
+	  printf ("element is - a[%d][%d] : ", i, j);
+	  scanf ("%d", &a[i][j]);
+	  // printf("%d",a[i][j]);
+
+	}
+
+    }
+
+  for (i = 0; i < 2; i++)
+    {
+
+      printf ("\n");
+      for (j = 0; j < 2; j++)
+	{
+
+
+	  printf ("%d\t", a[i][j]);
+	}
+
+    }
+
+  printf ("\n\n");
+  printf ("----------Matrix 2-----------");
+  printf ("\n\n");
+  // printf("%d",a[0][0]*a[0][1]);
+
+  //printf("%d\t",a[i][j]);
+
+
+  for (i = 0; i < 2; i++)
+    {
+
+      for (j = 0; j < 2; j++)
+	{
+
+	  printf ("element is: b[%d][%d] - ", i, j);
+	  scanf ("%d", &b[i][j]);
+
+	}
+    }
+
+  for (i = 0; i < 2; i++)
+    {
+
+      printf ("\n");
+      for (j = 0; j < 2; j++)
+	{
+
+	  printf ("%d\t", b[i][j]);
+	  //printf("\n\n");
+	  // printf("%d\t",a[i][j]);
+
+	}
+    }
+
+  printf ("\n\n");
+  printf ("-----------Sum--------");
+  printf ("\n\n");
+
+  for (i = 0; i < 2; i++)
+    {
+
+      printf ("\n");
+
+      for (j = 0; j < 2; j++)
+	{
+
+	  sum[i][j] = a[i][j] + b[i][j];
+	  printf ("%d\t", sum[i][j]);
+
+	}
+    }
+
+
+  printf ("\n\n");
+  printf ("-----------Mul--------");
+  printf ("\n\n");
+
+  for (i = 0; i < 2; i++)
+    {
+
+      //  printf("\n");
+
+      for (j = 0; j < 2; j++)
+	{
+
+	  c[i][j] = 0;
+	  for (k = 0; k < 2; k++)
+	    {
+
+	      //mul=0;
+	      c[i][j] += a[i][k] * b[k][j];
+	      // printf("%d\t",c[i][j]);
+
+	    }
+
+	  printf ("%d\t", c[i][j]);
+
+	}
+
+      printf ("\n");
+    }
+
+
+  return 0;
+}
