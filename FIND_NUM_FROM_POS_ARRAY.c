@@ -9,7 +9,7 @@
 int main ()
 {
   int arr[5];
-  int num, p, count = 0, count2 = 0;
+  int num, p, count = -1, count2 = -1;
 
   printf ("enter the 5 elements: \n\n");
 
@@ -41,7 +41,7 @@ int main ()
 
     }
 
-  if (count == 0)
+  if (count == -1)
     {
 
       printf ("enter valid num\n");
@@ -75,7 +75,7 @@ int main ()
 
     }
 
-  if (count2 == 0)
+  if (count2 == -1)
     {
 
       printf ("enter valid position\n");
@@ -91,3 +91,5 @@ int main ()
 
   return 0;
 }
+
+
